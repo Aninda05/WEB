@@ -48,3 +48,16 @@
 				font-family: monospace;
 				font-size: 30px;
 			}
+			#kill{
+				color:white;
+				font-family: monospace;
+				font-size: 30px;
+			}
+			ul{
+				list-style-type: disc;
+				color:white;
+			}
+			ol{
+				list-style-type: disc;
+				color:white;
+			}
