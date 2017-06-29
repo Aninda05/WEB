@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>My First JavaScript</h2>
+
+<button type="button"
+onclick="document.getElementById('dem').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<p id="dem"></p>
+
+<h2>What Can JavaScript Do?</h2>
+<p id="demosa">JavaScript can change HTML content.</p>
+<button type="button" onclick='myfunction()'>Click Me!</button>
+
+<h2>What Can JavaScript Do?</h2>
+<p>JavaScript can change HTML attributes.</p>
+<p>In this case JavaScript changes the src (source) attribute of an image.</p>
+<input id="numb" >
+<button type="button" onclick='myfunction()'>Submit</button>
+<p id="demo"></p>
+<!--<button onclick="document.getElementById('myImage').src='image/giphy-downsized.gif'">Raged Pikachu</button>
+<button onclick="document.getElementById('myImage').src='image/giphy-downsized1.gif'">Time to calm Pikachu</button>-->
+<img id="myImage" onclick="changeimage()" src="image/giphy-downsized.gif" >
+<script type="text/javascript">
+	function changeimage(){
+		var image=document.getElementById("myImage");
+		if (image.src.match("image/giphy-downsized.gif")) {
+			image.src="image/giphy-downsized1.gif";
+		}
+		else
+		{
+			image.src="image/giphy-downsized.gif";
+		}
+	}
+	function myfunction()
+	{
+		var x,text1;
+		x=document.getElementById("numb").value;
+		if(isNaN(x)||x<1||x>10)
+			text1="Not valid!";
+		else
+			text1="Input Ok";
+		document.getElementById("demo").innerHTML=text1;
+	}
+</script>
+</body>
+</html> 
