@@ -65,7 +65,12 @@
 		echo "<br><hr>Did you Miss Me?<hr><br>";
 		$y++;
 	}
-	/*if ($t) {
+	function fam($f="Hello",$s="side"){
+		echo "<br> $f from the other $s";
+	}
+	fam();
+	/*fam("Hello","side");
+	if ($t) {
 		
 	}
 	elseif ($t<"20") {
