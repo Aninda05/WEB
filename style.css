@@ -3,6 +3,7 @@
 				background-color: powderblue ;
 				background-image: url("image/long.jpg") ;
 				background-attachment:fixed;
+
 			}
 			
 			h1{
@@ -60,4 +61,9 @@
 			ol{
 				list-style-type: disc;
 				color:white;
+			}
+			.despacito{
+				
+				color:white;
+			
 			}
