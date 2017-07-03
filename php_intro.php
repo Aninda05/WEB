@@ -26,6 +26,9 @@
 	$marvel1= array("Iron_man"=>"Miss Potts"," Captain_America"=>"Carter"," Spider"=>"Mary jane");
 	$dc= array("Batty","Joker","Riddler");
 	
+	$dc2= array("B"=>"selina"," J"=>"Harley"," R"=>"Miss Prinzle","Bary"=>"Iris");
+
+
 	print_r($dc1+$marvel1);
 	var_dump($dc1!=$marvel1);
 	
@@ -66,7 +69,7 @@
 		$y++;
 	}
 	function fam($f="Hello",$s="side"){
-		echo "<br> $f from the other $s";
+		echo "<br> $f from the other $s <br/>";
 	}
 	fam();
 	/*fam("Hello","side");
@@ -77,6 +80,25 @@
 		echo "";
 	}
 	else*/
+		echo $dc1["Batty"]." Luls Bruce<br />";
+	foreach ($dc1 as $key => $value) {
+	echo "Key=".$key.", Value=".$value;
+	echo "<br />";
+
+
+		}
+
+	$arr=array_diff($dc2, $dc1);
+	print_r($arr); //not working analyze
+
+	//array_key_exits("KEY", $array)
+
+	$pop1=array_pop($dc);
+	echo "<br/>Mod Arr";
+	print_r($dc);
+	echo "<br /><br /><br />  <hr> $pop1<br>";
+	echo array_search("selina", $dc1);
+
 ?> 
 </body>
 </html>

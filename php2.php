@@ -53,10 +53,26 @@
 		}
 		else {
 			$file=fopen("welcome1.txt", "r");
-			echo "file found";
+			echo "file found<br />";
 		}
 		
+		/*$date=date_create("2013-03-15");
+		$date1=date_create("2016-03-20");
+		echo date_format($date,"Y/m/d H:i:s");
 
+		var_dump(checkdate(12, 31, -400));
+		echo "<br />";
+		var_dump(checkdate(2, 29, 2004));
+		$diff=date_diff($date,$date1);
+		echo $diff->format("%R%a days");;		//R is the sign
+*/
+		$datetime1= new DateTime('2 Jan 2018');
+		$datetime2= new DateTime('2 Jan 2030');
+
+		$interval=$datetime1->diff($datetime2);
+		echo "<br/>";
+		echo $interval->format("%y Years %m Months %d Days")."<br />";
+		echo $interval->format("%a Days")."<br />";
 	?>
 
 </body>
