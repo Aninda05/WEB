@@ -27,6 +27,11 @@ $_SESSION['counter']=1;
 		<form action="logout.php" method="POST">
 			<input type="Submit" value ="LOGOUT"/>
 		</form>
+		<?php 
+			$a="hello";
+			$hello="ok";
+			echo $$a;
+		?>
 		<?php echo($msg); ?>
 	</body>
 	</html>
