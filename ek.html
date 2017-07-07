@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+	
+	<script type="text/javascript">
+  		function submitForm(action) {
+    	var form = document.getElementById('form1');
+    	form.action = action;
+    	form.submit();
+  		}
+	</script>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="/anitro/style.css">
+	</head>
+	<body>
+		<marquee>
+			LogIn Page
+		</marquee>
+				<hr>
+		<h1>
+			<sup>W</sup>E<sub>L</sub>C<sup>O</sup>M<sub>E</sub>
+		</h1>
+		<p id="para1">
+			Enter the contents below to sign up
+		</p>
+		<form action="do.php" method="POST" id="form1">
+		<fieldset>
+			<legend>
+				<b>LogIn</b>
+			</legend><b>
+		First name: <input type="text" name="fname"><br><br>
+		Last name: <input type="text" name="lname" form="form1"><br><br>
+		Email:<input type="Email" name="ename"><br>
+		<input type="submit" onclick="submitForm('do.php')" value="Insert"><br></b>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend>
+			<b>Delete</b>
+			</legend>
+		<b>
+		Delete ID:<input type="text" name="del"><br>
+		<input type="submit" onclick="submitForm('teen.php')" value="Delete"></b>
+		</fieldset>
+		
+		<fieldset>
+			<legend>
+				<b>Update</b>
+			</legend><b>
+		ID:<input type="text" name="uname"><br>
+		First name: <input type="text" name="f"><br><br>
+		Last name: <input type="text" name="l" form="form1"><br><br>
+		Email:<input type="Email" name="e"><br>
+		<input type="submit" onclick="submitForm('char.php')" value="Update"><br></b>
+		</fieldset>
+		
+		</form>
+		</body>
+	</html>
